@@ -1,7 +1,7 @@
 ------------------
 --Case Study 1---
 --Author: A'Kia Harris
---Date:April 4,2022
+--Date:April 22,2022
 --Tool used: Big Query 
 ------------------
 
@@ -9,7 +9,7 @@
 SELECT customer_id, SUM(price) AS Amount_Spent
 FROM Dannys_Diner.sales AS s
 JOIN Dannys_Diner.menu AS m
-USING( proudct_id)
+USING( product_id)
 GROUP BY customer_id;
 
 
