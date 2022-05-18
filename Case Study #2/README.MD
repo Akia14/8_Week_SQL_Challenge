@@ -1,4 +1,4 @@
-🍜 Case Study #2: PIZZARUNNER
+# 🍜 Case Study #2: PIZZARUNNER
 
  ## 📚 Table of Contents
  - [Business Task](#business-task)
