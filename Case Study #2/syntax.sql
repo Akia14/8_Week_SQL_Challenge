@@ -4,7 +4,7 @@
 --Date:May 11,2022
 --Tool used: PostgresSQL
 ------------------
-## Let's Investigate The Tables First
+### Lets Investigate The Tables Fist
 -- Check out the tables metadata
 SELECT
  table_name,
@@ -20,7 +20,7 @@ SELECT
 FROM information_schema.columns
 WHERE table_name = 'customer_orders';
 
-
+### What's In the Tables
 SELECT * FROM pizza_runner.runners
 --There are 4 runners and this tables shows their registration date. Nothing to clean.
 
