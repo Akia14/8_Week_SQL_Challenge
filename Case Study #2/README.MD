@@ -5,7 +5,7 @@
  - [Business Task](#business-task)
  - [Entity Relationship Diagram](#entity-relationship-diagram)
  - [Case Study Questions](#case-study-questions)
- - [Solution on Github](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%231/Solution.md)
+ - [Solution on Github](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232/syntax.sql)
 
  ***
 
