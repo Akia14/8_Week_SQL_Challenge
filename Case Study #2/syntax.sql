@@ -5,6 +5,21 @@
 --Tool used: PostgresSQL
 ------------------
 ## Let's Investigate The Tables First
+-- Check out the tables metadata
+SELECT
+ table_name,
+ column_name,
+ data_type
+FROM information_schema.columns
+WHERE table_name = 'runner_orders';
+
+SELECT
+ table_name,
+ column_name,
+ data_type
+FROM information_schema.columns
+WHERE table_name = 'customer_orders';
+
 
 SELECT * FROM pizza_runner.runners
 --There are 4 runners and this tables shows their registration date. Nothing to clean.
