@@ -74,7 +74,7 @@ SELECT * FROM runner_orders_cleaned
 
 
 
-###What's In the Tables
+###Whats In the Tables
 SELECT * FROM pizza_runner.runners
 --There are 4 runners and this tables shows their registration date. Nothing to clean.
 
@@ -104,6 +104,40 @@ SELECT COUNT(*) FROM pizza_runner.customer_orders;
 
 SELECT COUNT(DISTINCT(order_id)) AS unique_customer_order FROM pizza_runner.customer_orders;
 
---3. How many successful orders were delivered by each runner?
+-- 3. How many successful orders were delivered by each runner?
 
-SELECT * FROM pizza_runner.runner_orders;
+SELECT * FROM runner_orders_cleaned;
+SELECT runner_id, COUNT(order_id) AS Completed_Orders
+FROM runner_orders_cleaned
+WHERE cancellation IS NULL
+GROUP BY 1
+ORDER BY runner_id;
+
+-- 4.How many of each type of pizza was delivered?
+/* We need to join 3 tables 
+1. customer_orders_cleaned as c (order_id column)
+2. pizza_runner.pizza_names as p (pizza_id column)
+3. runner_orders_cleaned as r (order_id column) */
+
+
+SELECT p.pizza_name, COUNT(r.order_id) as Delivered_Pizza
+FROM 
+customer_orders_cleaned as c 
+INNER JOIN 
+pizza_runner.pizza_names as p ON c.pizza_id = p.pizza_id
+INNER JOIN 
+runner_orders_cleaned as r ON r.order_id = c.order_id
+WHERE cancellation IS NULL
+GROUP BY 1
+
+
+--5.How many Vegetarian and Meatlovers were ordered by each customer?
+
+SELECT
+  customer_id,
+  SUM(CASE WHEN pizza_id = 1 THEN 1 ELSE 0 END) AS meatlovers,
+  SUM(CASE WHEN pizza_id = 2 THEN 1 ELSE 0 END) AS vegetarian
+FROM customer_orders_cleaned
+GROUP BY 1
+ORDER BY 1;
+
