@@ -141,3 +141,22 @@ FROM customer_orders_cleaned
 GROUP BY 1
 ORDER BY 1;
 
+--6. What was the maximum number of pizzas delivered in a single order?
+
+WITH CTE_TEMP AS (
+
+SELECT DISTINCT(c.customer_id) as customer_id, COUNT(r.order_id) as Delivered_Pizza
+FROM 
+customer_orders_cleaned as c 
+INNER JOIN 
+pizza_runner.pizza_names as p ON c.pizza_id = p.pizza_id
+INNER JOIN 
+runner_orders_cleaned as r ON r.order_id = c.order_id
+WHERE cancellation IS NULL
+GROUP BY 1
+)
+SELECT customer_id , MAX(Delivered_Pizza)  as Max_Pizzas_Delivered
+FROM CTE_TEMP
+GROUP BY 1
+ORDER BY 2 desc
+
