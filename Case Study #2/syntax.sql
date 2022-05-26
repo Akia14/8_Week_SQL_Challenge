@@ -159,4 +159,6 @@ SELECT customer_id , MAX(Delivered_Pizza)  as Max_Pizzas_Delivered
 FROM CTE_TEMP
 GROUP BY 1
 ORDER BY 2 desc
+LIMIT 1
+
 
