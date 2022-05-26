@@ -2,7 +2,7 @@
 
 ## Solution
 
-View the complete syntax [here](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%231/SQL%20syntax.sql)
+View the complete syntax [here](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232/syntax.sql)
 
 ***
 ### Let's Investigate The Tables First
