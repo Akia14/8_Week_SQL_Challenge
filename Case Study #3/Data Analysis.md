@@ -1,0 +1,27 @@
+------------------
+--Case Study 3---
+--Author: A'Kia Harris
+--Date:May 26,2022
+--Tool used: PostgresSQL
+------------------
+
+1. How many customers has Foodie-Fi ever had?
+ ```sql
+ SELECT COUNT(DISTINCT customer_id) as Overall_customer_count
+FROM foodie_fi.subscriptions
+```
+2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
+```sql
+
+```
+
+
+4.What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
+5. What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
+6. How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
+7. What is the number and percentage of customer plans after their initial free trial?
+8. What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
+9. How many customers have upgraded to an annual plan in 2020?
+10. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
+11. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
+12. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
