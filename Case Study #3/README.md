@@ -53,7 +53,7 @@ When customers churn — they will keep their access until the end of their curr
 
 ### A. Customer Journey
 
-View my solution [here]().
+View my solution [here](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%233/Customer%20Journey.md).
   
 Based off the 8 sample customers provided in the sample from the subscriptions table, write a brief description about each customer’s onboarding journey.
 
