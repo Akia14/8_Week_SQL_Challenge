@@ -9,8 +9,8 @@
 - [Case Study Questions](#case-study-questions)
 - Solution
   - [Customer Journey Analysis](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%233/Customer%20Journey.md)
-  - [Data Analysis]()
-  - [Complete SQL Syntax]()
+  - [Data Analysis](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%233/Data%20Analysis.md)
+  
 
 ***
 
