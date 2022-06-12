@@ -58,6 +58,7 @@ View my solution [here](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main
 Based off the 8 sample customers provided in the sample from the subscriptions table, write a brief description about each customer’s onboarding journey.
 
 ### B. Data Anlysis Questions
+View my solutions [here](https://github.com/Akia14/8_Week_SQL_Challenge/blob/main/Case%20Study%20%233/Data%20Analysis.md)
 
 1. How many customers has Foodie-Fi ever had?
 2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
