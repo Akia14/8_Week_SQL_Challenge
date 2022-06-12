@@ -111,12 +111,3 @@ AND plan_rank = 2
 
 ---
 
-
-
-6.  What is the number and percentage of customer plans after their initial free trial?
-7.  What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
-8. What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
-9. How many customers have upgraded to an annual plan in 2020?
-10. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
-11. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
-12. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
